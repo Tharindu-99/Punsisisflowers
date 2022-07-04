@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>about us</title>
+
+	<script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+	<style type="text/css"> 
+		body{
+			background-image: url( ../Covers/realistic-blurred-floral-background_52683-63510.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+        }
+    /*header */
+		.header{
+			margin:0 ;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		nav{
+			line-height: 20px;
+			background: rgba(0, 0, 0, 0.6);
+			border-top-right-radius:40px;
+			border-top-left-radius:40px;
+			border-bottom-right-radius:40px;
+			border-bottom-left-radius:40px;
+			padding: 3px 60px;
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+		}
+		nav .header{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav .header .head_items{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 38%;
+			font-family: 'poppins',sans-serif;
+			color: #ffff;
+			text-transform: capitalize;
+		}
+		nav .header .head_items li{
+			list-style: none;
+		}
+		nav .header .head_items li a{
+			text-decoration: none;
+			font-size: 1.2em;
+			font-weight: 540;
+			color: #fff;
+			transition: all 0.3s;
+		}
+		nav .header .head_items li a:hover{
+			color: #df0772;
+		} 
+	/*about */
+.aboutus{
+	height: 550px;
+	display: block;
+	font-style: oblique;
+	letter-spacing: 0.5px;
+}
+.aboutus .h1{
+	text-align: center;
+	font-weight: 200;
+	padding: 6px;
+	text-transform: capitalize;
+	color: #111;
+}
+.aboutus .h3{
+	text-align: left;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #111;
+	height: 50px;
+}
+.aboutus .p{
+	text-align: left;
+	font-size: 17px;
+	font-weight: 200;
+	font-family: "poppins",sans-serif;
+}		
+	/*footer */
+footer{
+	background: url(../Covers/new.jpeg);
+	background-size: cover;
+	color: #ffff;
+	width: 100%;
+	font-size: 15px;
+	border-top-right-radius:150px;
+}
+.row{
+	width: 94%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;
+	background:rgba(0, 0, 0, 0.8); 
+	padding: 3px 60px;
+	border-top-right-radius:150px ;
+	margin-left: -40px;
+	margin-right: -50px;
+}
+.col{
+	height: 345px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	letter-spacing: 0.5px;
+	width: 20%;
+	padding: 0 14px;
+}
+.col_1{
+	margin: 12px 0;
+	letter-spacing: 1.5px;
+	font-family: "SriLankan",cursive;
+	font-size: 15px;
+	width: 20%;
+	padding: 0 14px;
+}
+.col h2{
+	width: fit-content;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 250;
+	position: relative;
+}
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 2px;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	overflow: hidden;
+}
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 1s linear infinite;
+}
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100%;
+	}
+}
+.footer li{
+	margin: 10px 0;
+	list-style: none;
+}
+.footer li a{
+	color: #fff;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 200;
+	color: #bbbbbb;
+	transition: all 0.2s ease;
+	font-family: 'poppins',sans-serif;
+}
+.footer li a:hover{
+	color: blue;
+	padding-left: 10px;
+}
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+.col .socialmedia-links{
+	list-style: none;
+	display: flex;
+}
+.col .socialmedia-links li i{
+	margin-right: 12px;
+	height: 30px;
+	width: 30px;
+	text-align:center;
+	font-size: 30px;
+	display: block;
+	transition: all 0.3s linear;
+}
+.col .socialmedia-links .fb li :hover i{ 
+	color:#ffff;
+	background-color: #3b8ff0;
+	border-radius: 30%;
+	transform: scale(1.4);
+}
+.col .socialmedia-links .inst li :hover i{
+	color:#ffff;
+	background: linear-gradient(#2b14ff, #ff3b65, #d4b421);
+	border-radius: 30%;
+	transform: scale(1.4);
+}
+.col .socialmedia-links .wp li :hover i{
+	color:#ffff;
+	background-color: #2de90b;
+	border-radius: 30%;
+	transform: scale(1.4);
+}	  
+    </style>
+</head>
+<body>
+<!--header-->
+	<header>
+	<nav>
+		<ul class="header">
+			<div class="logo">
+				<img src="..\Covers\logo_new.png" height="150px" width="200px">
+			</div>
+			<div class="head_items">
+				<li><a href="../Code/1st%20Page_UniqueFlora-FlowerShop.html"><i class="far fa-arrow-alt-circle-left"></i>Back</a></li>
+				<li><a href="../Code/home.html"><i class="fas fa-house-user"></i>Home</a></li>
+				<li><a href="../Code/login.html"><i class="fas fa-user-circle"></i>Your Account</a></li>
+				<li><a href="../Code/Sign_up.html">sign up <i class="far fa-id-card"></i></a></li>
+			</div>
+		</ul>
+	</nav>
+	</header>
+<!--about-->
+   <div class="aboutus">
+	<div class="h1"><h1>About Us</h1></div>
+	<div class="h3"><h3>join with the sweet arrangements in the new century for all your flower needs,</h3></div>
+	<div class="p">
+		<p>
+		Unique Flora was founded by Dr. Yasadi Bopage (MBBS, DIPM, Ph.D.) while she was a fourth-year medical student at the Medical Faculty, Peradeniya in 2015. Since then, Unique  Flora has revolutionized Sri Lanka’s floral industry by rendering professional services and carefully developed quality assured procedures for producing the best floral arrangements. These efforts have not only helped Unique Flora to create floral solutions at very competitive prices but also build its reputation as the foremost florist in the country with cost-effective and innovative floral designs.<br><br>
+
+      Unique Flora has a state-of-the-art workshop and cool room facility at its  Bandarawela stores complex and operates via other six branches located at Nawala, Colombo 07, Colombo City Center, Kandy City Center, Negombo, Panadura.<br><br>
+
+      Its biggest strength is the well-experienced and professional staff and over 5 years of experience in the industry which has made it the market leader in supplying wedding flowers and floral solutions for corporate events. The constant introduction of innovative designs and different floral solutions has made Unique Flora the floral solutions provider of choice for many leading international events in Sri Lanka.<br><br>
+
+      Unique Flora specializes in Poruwa, Church, Hindu, and Muslim weddings and enjoys the reputation as being the only new wedding florist in Sri Lanka to use a fleet of freezer trucks to deliver flowers that maintain freshness.<br><br>
+
+      Unique Flora also offers its clientele the option of ordering flower arrangements via its hotline +91-0522461095, as well as its website www.uniqueflora.com, and on social media as unique flora. This website provides a link to all the services offered as well as an extensive range of online flower selections that millions of people across the world could order. Our online wedding planning service has helped many foreign nationals and Sri Lankan expatriates to have their weddings in Sri Lanka.
+	</p>
+</div>
+</div>   
+<!--footer-->
+	<footer>
+			<ul class="footer">
+		<div class="row">
+			<div class="col_1">
+				<li><img src="..\Covers\logo_new.png" width="60%" height="70%"></li>
+				<li>Join with the sweet arrangements in the new century for all your flower needs</li>
+			</div>
+			<div class="col">
+				<h2>office <div class="underline"><span></span></div></h2>
+				<li><i class="fas fa-map-marker-alt"></i> No 22,<br> Poongala Rd,<br> Bandarawela .</li>
+				<li class="email-id"><i class="far fa-envelope"></i><a href="#"> uniqueflora@gmail.com</a></li>
+				<li><i class="fas fa-phone"></i>+91-0522461095</li>
+				<li><i class="fas fa-globe-asia"></i><a href="#"> www.uniqueflora.com</a></li>
+			</div>
+			<div class="col">
+				<h2>join with us <div class="underline"><span></span></div> </h2>
+				<li><a href="../Code/Terms%20&%20Conditions.html">Terms & Conditions</a></li>
+				<li><a href="../Code/privacy%20policy.html">Privacy Policy</a></li>
+			</div>
+			<div class="col">
+				<h2>follow us <div class="underline"><span></span></div> </h2>
+				<div class="socialmedia-links">
+				<div class="fb"><li><a href="#"><i class="fab fa-facebook"></i></a></li></div>
+				<div class="fb"><li><a href="#"><i class="fab fa-twitter"></i></a></li></div>
+				<div class="inst"><li><a href="#"><i class="fab fa-instagram"></i></a></li></div>
+				<div class="fb"><li><a href="#"><i class="fab fa-linkedin"></i></a></li></div>
+				<div class="wp"><li><a href="#"><i class="fab fa-whatsapp"></i></a></li></div>
+			</div>
+			</div>
+		</div>
+	</ul>
+	</footer>
+</body>
+</htmal

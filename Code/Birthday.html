@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Birthday Gift</title>
+
+	<script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+	<style type="text/css">
+
+	body{
+		background: rgba(228, 142, 142, 0.4) ;
+	}
+ /*header */
+		.header{
+			margin:0 ;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		nav{
+			line-height: 20px;
+			background: rgba(0, 0, 0, 0.6);
+			border-top-right-radius:40px;
+			border-top-left-radius:40px;
+			border-bottom-right-radius:40px;
+			border-bottom-left-radius:40px;
+			padding: 3px 60px;
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+		}
+		nav .header{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav .header .head_items{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 42%;
+			font-family: 'poppins',sans-serif;
+			color: #ffff;
+			text-transform: capitalize;
+		}
+		nav .header .head_items li{
+			list-style: none;
+		}
+		nav .header .head_items li a{
+			text-decoration: none;
+			font-size: 1.2em;
+			font-weight: 540;
+			color: #fff;
+			transition: all 0.3s;
+		}
+		nav .header .head_items li a:hover{
+			color: #df0772;
+		}
+
+/*header_1 */		
+header_1{
+	line-height: 20px;
+	width: 100%;
+}
+.head_1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header_1 .head_1 .item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-family: 'poppins',sans-serif;
+	color: #fff;
+	text-transform: capitalize;
+}
+header_1 .head_1 .item li{
+	list-style: none;
+}
+header_1 .head_1 .item li a{
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 540;
+	color: #fff;
+	padding: 5px 20px;
+	place-items: center;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	flex-wrap: wrap;
+	transition: all 0.3s ease;
+}
+button{
+	margin: 10px;
+	border-radius: 50px;
+	border: 2px solid #ffa500;
+	background-color: #ffa500;
+	height: 50px;
+	width: 210px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+header_1 button:hover{
+    background-color: #ffd700;
+    border-radius: 50px;
+    height: 50px;
+    width: 210px;
+    transform: scale(1.2);
+}
+table{
+	margin-top: 20px;
+	justify-content: space-between;
+}
+td{
+	justify-content: space-between;
+}
+p{
+	text-align: center;
+    color: black;
+    font-family: "poppins",sans-serif;
+}
+a{
+	align-items: center;
+	text-decoration: none;
+	justify-content: space-between;
+}
+.gift :hover{
+	transform: scale(1.1);
+	color: blue;
+	cursor: pointer;
+}
+/*img */
+.img1{
+	margin-top: 40px;
+    margin-left: 10px;
+    width: 45%;   
+}
+.img1:hover{
+	transform: scale(1.1);
+}
+.rs1{
+	margin-left: -230px;
+}
+.img2{
+	margin-top: 20px;
+    margin-left: 10px;
+    width: 45%;
+}
+.img2:hover{
+	transform: scale(1.1);
+}
+.rs2{
+	margin-left: -320px;
+}
+.img3{
+	margin-top: 20px;
+    margin-left: -100px;
+}
+.img3:hover{
+	transform: scale(1.1);
+}
+.rs3{
+	margin-left: -150px;
+}
+.img4{
+	margin-top: 20px;
+    margin-left: 250px;
+    width: 45%;  
+}
+.img4:hover{
+	transform: scale(1.1);
+}
+.rs4{
+	margin-left: 200px;
+}
+.img5{
+	margin-top: 20px;
+    margin-left: 300px;
+    width: 50%;    
+}
+.img5:hover{
+	transform: scale(1.1);
+}
+.rs5{
+	margin-left: 300px;
+}
+.img6{
+	margin-top: 20px;
+    margin-left: 250px;
+    width: 70%;
+}
+.img6:hover{
+	transform: scale(1.1);
+}
+.rs6{
+	margin-left: 350px;
+}
+.img7{
+	margin-top: 20px;
+    margin-left: 300px;      
+}
+.img7:hover{
+	transform: scale(1.1);
+}
+.rs7{
+	margin-left: 290px;
+}
+.img8{
+	margin-top: 20px;
+    margin-left: 150px;
+    width: 80%;    
+}
+.img8:hover{
+	transform: scale(1.1);
+}
+.rs8{
+	margin-left: 200px;
+}
+.img9{
+	margin-top: 20px;
+    margin-left: 250px; 
+    width: 60%;     
+}
+.img9:hover{
+	transform: scale(1.1);
+}
+.rs9{
+	margin-left: 200px;
+}
+.img10{
+	margin-top: 20px;
+    margin-left: 10px;
+    width: 60%;
+}
+.img10:hover{
+	transform: scale(1.1);
+}
+.rs10{
+	margin-left: -180px;
+}
+.img11{
+	margin-top: 20px;
+    margin-left: 50px;
+    width: 50%;       
+}
+.img11:hover{
+	transform: scale(1.1);
+}
+.rs11{
+	margin-left: -240px;
+}
+.img12{
+	margin-top: 20px;
+    margin-left: -120px;
+    width: 160%;    
+}
+.img12:hover{
+	transform: scale(1.1);
+}
+.rs12{
+	margin-left: -150px;
+}
+.img13{
+	margin-top: 20px;
+    margin-left: 0px;
+    width: 90%;    
+}
+.img13:hover{
+	transform: scale(1.1);
+}
+.rs13{
+	margin-left: -30px;
+}
+.img14{
+	margin-top: 20px;
+    margin-left: 100px;
+    width: 40%;    
+}
+.img14:hover{
+	transform: scale(1.1);
+}
+.rs14{
+	margin-left: -200px;
+}
+.img15{
+	margin-top: 20px;
+    margin-left: -120px;
+    width: 150%;   
+}
+.img15:hover{
+	transform: scale(1.1);
+}
+.rs15{
+	margin-left: -150px;
+}
+.img16{
+	margin-top: 20px;
+    margin-left: 450px;
+    width: 90%;      
+}
+.img16:hover{
+	transform: scale(1.1);
+}
+.rs16{
+	margin-left: 360px;
+}
+.img17{
+	margin-top: 20px;
+    margin-left: 0px;
+    width: 70%;      
+}
+.img17:hover{
+	transform: scale(1.1);
+}
+.rs17{
+	margin-left: -180px;
+}
+.img18{
+	margin-top: 20px;
+    margin-left: 0px;
+    width: 55%;   
+}
+.img18:hover{
+	transform: scale(1.1);
+}
+.rs18{
+	margin-left: -300px;
+}
+.img19{
+	margin-top: 20px;
+    margin-left: -200px; 
+    width: 190%; 
+}
+.img19:hover{
+	transform: scale(1.1);
+}
+.rs19{
+	margin-left: -250px;
+}
+.img20{
+	margin-top: 20px;
+    margin-left: 100px;   
+}
+.img20:hover{
+	transform: scale(1.1);
+}
+.rs20{
+	margin-left: -100px;
+}
+.img21{
+	margin-top: 20px;
+    margin-left: 150px;
+}
+.img21:hover{
+	transform: scale(1.1);
+}
+.rs21{
+	margin-left: -200px;
+}
+.img22{
+	margin-top: 20px;
+    margin-left: -60px;   
+}
+.img22:hover{
+	transform: scale(1.1);
+}
+.rs22{
+	margin-left: -120px;
+}
+.img23{
+	margin-top: 20px;
+    margin-left: 130px;
+    width: 50%;   
+}
+.img23:hover{
+	transform: scale(1.1);
+}
+.rs23{
+	margin-left: 10px;
+}
+.img24{
+	margin-top: 20px;
+    margin-left: 150px;
+}
+.img24:hover{
+	transform: scale(1.1);
+}
+.rs24{
+	margin-left: -200px;
+}
+.img25{
+	margin-top: 20px;
+    margin-left: -100px;
+    width: 130%;
+}
+.img25:hover{
+	transform: scale(1.1);
+}
+.rs25{
+	margin-left: -140px;
+}
+/*footer */
+footer{
+	background: url(../Covers/new.jpeg);
+	background-size: cover;
+	color: #ffff;
+	width: 100%;
+	font-size: 15px;
+	border-top-right-radius:150px;
+}
+.row{
+	width: 94%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;
+	background:rgba(0, 0, 0, 0.8); 
+	padding: 3px 60px;
+	border-top-right-radius:150px ;
+	margin-left: -40px;
+	margin-right: -50px;
+}
+.col{
+	height: 345px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	letter-spacing: 0.5px;
+	width: 20%;
+	padding: 0 14px;
+}
+.col_1{
+	margin: 12px 0;
+	letter-spacing: 1.5px;
+	font-family: "SriLankan",cursive;
+	font-size: 15px;
+	width: 20%;
+	padding: 0 14px;
+}
+.col h2{
+	width: fit-content;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 250;
+	position: relative;
+}
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 2px;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	overflow: hidden;
+}
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 1s linear infinite;
+}
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100%;
+	}
+}
+.footer li{
+	margin: 10px 0;
+	list-style: none;
+}
+.footer li a{
+	color: #fff;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 200;
+	color: #bbbbbb;
+	transition: all 0.2s ease;
+	font-family: 'poppins',sans-serif;
+}
+.footer li a:hover{
+	color: blue;
+	padding-left: 10px;
+}
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+.col .socialmedia-links{
+	list-style: none;
+	display: flex;
+}
+.col .socialmedia-links li i{
+	margin-right: 12px;
+	height: 30px;
+	width: 30px;
+	text-align:center;
+	font-size: 30px;
+	display: block;
+	transition: all 0.3s linear;
+}
+.col .socialmedia-links .fb li :hover i{ 
+	color:#ffff;
+	background-color: #3b8ff0;
+	border-radius: 30%;
+	transform: scale(1.4);
+}
+.col .socialmedia-links .inst li :hover i{
+	color:#ffff;
+	background: linear-gradient(#2b14ff, #ff3b65, #d4b421);
+	border-radius: 30%;
+	transform: scale(1.4);
+}
+.col .socialmedia-links .wp li :hover i{
+	color:#ffff;
+	background-color: #2de90b;
+	border-radius: 30%;
+	transform: scale(1.4);
+}
+	</style>
+</head>
+<body>
+<!--header-->
+	<header>
+	<nav>
+		<ul class="header">
+			<div class="logo">
+				<img src="..\Covers\logo_new.png" height="150px" width="200px">
+			</div>
+			<div class="head_items">
+				<li><a href="../Code/1st%20Page_UniqueFlora-FlowerShop.html"><i class="far fa-arrow-alt-circle-left"></i>Back</a></li>
+				<li><a href="../Code/home.html"><i class="fas fa-house-user"></i>Home</a></li>
+				<li><a href="../Code/about%20us.html">About Us</a></li>
+				<li><a href="../Code/login.html"><i class="fas fa-user-circle"></i>Your Account</a></li>
+				<li><a href="../Code/Sign_up.html">sign up <i class="far fa-id-card"></i></a></li>
+			</div>
+		</ul>
+	</nav>
+	</header>
+<!--image-->
+<table align="center">
+<tr>
+    <td class="td1">
+    	<a href="#" class="gift"><img src="..\unique flora images\Gift\fga624_large4.jpg" class="img1">
+        <p class="rs1">Pink Rose Bouquet-10 Pink Roses<br><b>LKR 5,200.00</b></p></a>
+    </td>
+    <td class="td1">
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\1 final--1612875853.jpg" class="img2">
+        <p class="rs2">Everlasting Joy<br><b>LKR 19,200.00</b></p></a>
+    </td>
+    <td class="td1">
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\1--1603528215.jpg" class="img3">
+        <p class="rs3">Rose Garden<br><b>LKR 4,700.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\5f04fb7b506ea7626efcdcc0f2532149.jfif" class="img4"> 
+        <p class="rs4">Rose Love<br><b>LKR 9,400.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\45f34a47-a7ba-412f-a4b1-308568cb2643.75bcaa19b116800d1b4b52ff490eefe2.jpeg" class="img5">
+        <p class="rs5">Red Rose Love<br><b>LKR 10,600.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\87d42a49175ed1c164ca321b79b09223ac.webp" class="img6">
+        <p class="rs6">Blooming Love<br><b>LKR 6,750.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\1610602310_1610600038_hqdefault[259].jpg" class="img7">
+        <p class="rs7">Electrifying Love<br><b>LKR 23,500.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\84067470_214145332574_0.50623700-1634102856.jpg" class="img8">
+        <p class="rs8">Evelyne<br><b>LKR 9,200.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\73556471_428693872358_0.68647300-1601976486.jpg" class="img9">
+        <p class="rs9">Lavish Wishes<br><b>LKR 6,210.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\1964129716-happy_birthday_flower_1.jpg" class="img10">
+        <p class="rs10">Soulful Tribe<br><b>LKR 8,280.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\A-Blooming-Love-Main-324x324[267].jpg" class="img11">
+        <p class="rs11">Happy Day<br><b>LKR 5,800.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\Birthday-Flowers.jpg" class="img12">
+        <p class="rs12">Rose Wishes<br><b>LKR 4,200.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\BLOG-02.png" class="img13">
+        <p class="rs13">Pure Wishes<br><b>LKR 10,400.00</b></p></a>
+    </td> 
+    <td> 
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\mixed-flowers-in-square-glass-vase_1.jpg" class="img14">
+        <p class="rs14">Birthday Happiness<br><b>LKR 7,600.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\kitkat-rosey-arrangement-9940210co-A[268].jpg" class="img15">
+        <p class="rs15">Kitkat Love With Rose<br><b>LKR 12,700.00</b></p></a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\liubov-podarok-rozy-buket-lenta-krasnye-red-love-flowers-r-2[275].jpg" class="img16"> 
+        <p class="rs16">Gift Rose<br><b>LKR 7,760.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\sku9901285.webp" class="img17">
+        <p class="rs17">Fresh Lovely Rose<br><b>LKR 21,430.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\TBC03-1-2.jpg" class="img18">
+        <p class="rs18">Fresh Wishes<br><b>LKR 9,450.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\Romantic-100-Red-Roses-Bouquet.jpg" class="img19">
+        <p class="rs19">Fresh Rose Birthday<br><b>LKR 20,500.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\IMG_9174.1--1620276116.jpg" class="img20">
+        <p class="rs20">Lovingly Pink<br><b>LKR 5,900.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\DSC_5234--1588932931.jpg" class="img21">
+        <p class="rs21">Sun Wishes<br><b>LKR 10,800.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\DSC_1856--1580296475.jpg" class="img22">
+        <p class="rs22">Birthday Morning Bouquet<br><b>LKR 6,900.00</b></p></a>
+    </td>
+</tr>
+<tr>
+	<td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\BF284-11KM[274].jpg" class="img23">
+        <p class="rs23">Red Love Gift<br><b>LKR 18,200.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\DSC_1052--1571218578.jpg" class="img24">
+        <p class="rs24">Cheerful Celebration<br><b>LKR 8,290.00</b></p></a>
+    </td>
+    <td>
+        <a href="#" class="gift"><img src="..\unique flora images\Gift\Flower-Shop-Korea-Majestic-Beauty-Flower-Bouquet-Main[219].jpg" class="img25">
+        <p class="rs25">White Wishes<br><b>LKR 2,300.00</b></p></a>
+    </td>
+</tr>
+</table>    
+<!--footer-->
+	<footer>
+			<ul class="footer">
+		<div class="row">
+			<div class="col_1">
+				<li><img src="..\Covers\logo_new.png" width="60%" height="70%"></li>
+				<li>Join with the sweet arrangements in the new century for all your flower needs</li>
+			</div>
+			<div class="col">
+				<h2>office <div class="underline"><span></span></div></h2>
+				<li><i class="fas fa-map-marker-alt"></i> No 22,<br> Poongala Rd,<br> Bandarawela .</li>
+				<li class="email-id"><i class="far fa-envelope"></i><a href="#"> uniqueflora@gmail.com</a></li>
+				<li><i class="fas fa-phone"></i>+91-0522461095</li>
+				<li><i class="fas fa-globe-asia"></i><a href="#"> www.uniqueflora.com</a></li>
+			</div>
+			<div class="col">
+				<h2>join with us <div class="underline"><span></span></div> </h2>
+				<li><a href="../Code/Terms%20&%20Conditions.html">Terms & Conditions</a></li>
+				<li><a href="../Code/privacy%20policy.html">Privacy Policy</a></li>
+			</div>
+			<div class="col">
+				<h2>follow us <div class="underline"><span></span></div> </h2>
+				<div class="socialmedia-links">
+				<div class="fb"><li><a href="#"><i class="fab fa-facebook"></i></a></li></div>
+				<div class="fb"><li><a href="#"><i class="fab fa-twitter"></i></a></li></div>
+				<div class="inst"><li><a href="#"><i class="fab fa-instagram"></i></a></li></div>
+				<div class="fb"><li><a href="#"><i class="fab fa-linkedin"></i></a></li></div>
+				<div class="wp"><li><a href="#"><i class="fab fa-whatsapp"></i></a></li></div>
+			</div>
+			</div>
+		</div>
+	</ul>
+	</footer>
+</body>
+</html>
